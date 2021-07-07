@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="{% static '/img/apple-icon.png' %}">
+  <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+  <title>
+    XeroX • AI
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="{% static 'css/fonts-google-api.css' %}" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+  <!-- Nucleo Icons -->
+  <link href="{% static 'css/nucleo-icons.css' %}" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="{% static 'css/blk-design-system.css' %}" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="{% static 'demo/demo.css' %}" rel="stylesheet" />
+  <!-- CSS CHAT BOX -->
+  <link href="{% static 'css/chatbox.css' %}" rel="stylesheet" />
+</head>
+
+<body class="index-page">
+  {% csrf_token %}
+
+  <div id="particles-js"></div>
+  <div class="cursor"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="100">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="{% url 'index' %}" rel="tooltip" title="Created by &#10084; Faizan Akhtar" data-placement="bottom">
+          <span>XeroX • AI Portfolio</span>
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a>
+                <span class="logo-custom">XeroX • AI</span>
+              </a>
+            </div>
+            <div class="col-6 collapse-close text-right">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item p-0">
+            <a class="nav-link" rel="tooltip" title="Contact me on Twitter" data-placement="bottom" href="https://twitter.com/FaizanA29699430" target="_blank">
+              <i class="fab fa-twitter"></i>
+              <p class="d-lg-none d-xl-none">Twitter</p>
+            </a>
+          </li>
+          <li class="nav-item p-0">
+            <a class="nav-link" rel="tooltip" title="Contact me on Facebook" data-placement="bottom" href="https://www.facebook.com/nev.ermind9619934" target="_blank">
+              <i class="fab fa-facebook-square"></i>
+              <p class="d-lg-none d-xl-none">Facebook</p>
+            </a>
+          </li>
+          <li class="nav-item p-0">
+            <a class="nav-link" rel="tooltip" title="Contact me on LinkedIn" data-placement="bottom" href="https://www.linkedin.com/in/faizan-akhtar-000xd" target="_blank">
+              <i style="font-size: 17px;" class="fab devicon-linkedin-plain"></i>
+              <p class="d-lg-none d-xl-none">LinkedIn</p>
+            </a>
+          </li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+              <i class="fa fa-cogs d-lg-none d-xl-none"></i> Getting started
+            </a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="#user-intro" class="dropdown-item">
+                Introduction
+              </a>
+              <a href="#education" class="dropdown-item">
+                Education
+              </a>
+              <a href="#skills" class="dropdown-item">
+                Skills
+              </a>
+              <a href="#open-source" class="dropdown-item">
+                Open Source
+              </a>
+              <a href="#tools" class="dropdown-item">
+                Tools & Technologies
+              </a>
+              <a href="#projects" class="dropdown-item">
+                Projects
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-default d-none d-lg-block" href="{% url 'resume' %}">
+              <i class="tim-icons icon-cloud-download-93"></i> Resume
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <div class="wrapper">
+    <div class="page-header header-filter">
+      <div class="squares square1"></div>
+      <div class="squares square2"></div>
+      <div class="squares square3"></div>
+      <div class="squares square4"></div>
+      <div class="squares square5"></div>
+      <div class="squares square6"></div>
+      <div class="squares square7"></div>
+
+      <!--Into Section-->
+      <div id="user-intro" class="container mt-5">
+        <div class="content-center brand">
+          <h1><span class="custom-logo">XeroX</span> • <code><span class="custom-h1">AI</span></code></h1>
+          <img src="{% static 'img/james.jpg' %}" alt="Circle image" class="img-fluid rounded-circle shadow mb-5" style="width: 150px;">
+          <h4>Welcome to XeroX AI portfolio</h4>
+          <h3>Hi, I'm <code>Faizan Akhtar</code></h3>
+          <p>A passionate Data Science & AI Researcher 🚀 and a Full Stack Web Developer, having great experience in building intelligent Web applications.</p>
+        </div>
+      </div>
+      <!--Into Section END-->
+
+    </div>
+    <div class="main">
+      <div class="section section-basic" id="basic-elements">
+        <img src="{% static 'img/path1.png' %}" class="path">
+        <div class="container">
+
+          <!--Education Section-->
+          <h3 id="education" class="title mb-3">Education</h3>
+          <div class="container py-2 mt-4 mb-4" id="education-section">
+            <!-- timeline item 1 -->
+            <div class="row no-gutters">
+              <div class="col-sm"> <!--spacer--> </div>
+              <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+                </div>
+                <h5 class="m-2">
+                  <span class="badge badge-pill bg-exotic border">&nbsp;</span>
+                </h5>
+                <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+                </div>
+              </div>
+              <div class="col-sm py-2">
+                <div class="card shadow">
+                    <div class="card-header">
+                          <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#inst-1" role="tablist">
+                                Institute
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#adm-1" role="tablist">
+                                Admission
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#acc-1" role="tablist">
+                                Accomplishments
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                    <div class="card-body">
+                      <!-- Tab panes -->
+                      <div class="tab-content tab-space">
+                        <div class="tab-pane active" id="inst-1">
+                          <a href="https://cadetcollegejhang.com/" class="btn btn-link btn-info">Joint Forces Of Cadet College Jhang</a>
+                          <p class="lead p-2"> The Cadet College Jhang campus was the first cadet college in the central Punjab comprised on 90 Kanals.
+                              The cadets from different areas of Pakistan arrived and the life on the campus started with different colors of cadets.
+                              The very first address of the chairman was full of lesson to the cadets. The time goes on and the enrollment was increased by huge number.
+                            In 2014, Cadet College Jhang had Cadet College Jhang had 700 day scholars apart from 150 residential from all around the Pakistan.
+                        </div>
+                        <div class="tab-pane" id="adm-1">
+                          <a href="" class="btn btn-link btn-info">From: </a><a href="" class="btn btn-link btn-primary">2007 - 2015</a>
+                          <p class="lead p-2">Took part in Pre-School, Primary, Middle and Secondary School Certificate (SSC)</p>
+                        </div>
+                        <div class="tab-pane" id="acc-1">
+                          <p class="lead p-2">Successfully graduated by scoring in First Division. Full focus was on Science subjects. Learned a lot about basics of universe & world around through science.</p>
+                          <a href="#" class="btn btn-link btn-info">Marks (SSC): <a href="" class="btn btn-link btn-primary">811/1100 ~ 73%</a></a><br>
+                          <a href="#" class="btn btn-link btn-info">Status: <a href="" class="btn btn-link btn-primary">Graduated</a></a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--/row-->
+            <!-- timeline item 2 -->
+            <div class="row no-gutters">
+              <div class="col-sm py-2">
+                <div class="card shadow">
+                    <div class="card-header">
+                          <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#inst-2" role="tablist">
+                                Institute
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#adm-2" role="tablist">
+                                Admission
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#acc-2" role="tablist">
+                                Accomplishments
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                    <div class="card-body">
+                      <!-- Tab panes -->
+                      <div class="tab-content tab-space">
+                        <div class="tab-pane active" id="inst-2">
+                          <a href="https://www.superiorcolleges.edu.pk/jhang/" class="btn btn-link btn-info">Superior Group Of Colleges Jhang</a>
+                          <p class="lead p-2">We are an Emotionally Intelligent Institute helping individuals exploring themselves and influencing others for shared goals. It helps students in becoming inspired learners, aspires, dreamers and motivate them to become the master of their fate and captain of their soul. We are not only producing best intellect in students through our plan IQ but also making them emotionally intelligent with our plan EQ, which in turn gives them the courage to make the world smile by adding value in peoples’ lives.</p>
+                        </div>
+                        <div class="tab-pane" id="adm-2">
+                          <a href="" class="btn btn-link btn-info">From: </a><a href="" class="btn btn-link btn-primary">2015 - 2017</a>
+                          <p class="lead p-2">Took part in Pre-Engineering, Higher Secondary School Certificate (HSSC)</p>
+                        </div>
+                        <div class="tab-pane" id="acc-2">
+                          <p class="lead p-2">Successfully graduated by scoring in First Division. Favourite Studies were Chemistry, Physics was actually quite good in the subjects.</p>
+                          <a href="#" class="btn btn-link btn-info">Marks (HSSC): <a href="" class="btn btn-link btn-primary">844/1100 ~ 77%</a></a><br>
+                          <a href="#" class="btn btn-link btn-info">Status: <a href="" class="btn btn-link btn-primary">Graduated</a></a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+                </div>
+                <h5 class="m-2">
+                  <span class="badge badge-pill bg-exotic border">&nbsp;</span>
+                </h5>
+                <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+                </div>
+              </div>
+              <div class="col-sm"> <!--spacer--> </div>
+            </div>
+            <!--/row-->
+            <!-- timeline item 3 -->
+            <div class="row no-gutters">
+              <div class="col-sm"> <!--spacer--> </div>
+              <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+                </div>
+                <h5 class="m-2">
+                  <span class="badge badge-pill bg-exotic border">&nbsp;</span>
+                </h5>
+                <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+                </div>
+              </div>
+              <div class="col-sm py-2">
+                <div class="card shadow">
+                    <div class="card-header">
+                          <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" data-toggle="tab" href="#inst-3" role="tablist">
+                                Institute
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#adm-3" role="tablist">
+                                Admission
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" data-toggle="tab" href="#acc-3" role="tablist">
+                                Accomplishments
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                    <div class="card-body">
+                      <!-- Tab panes -->
+                      <div class="tab-content tab-space">
+                        <div class="tab-pane active" id="inst-3">
+                          <a href="https://sahiwal.comsats.edu.pk/" class="btn btn-link btn-info">COMSATS University Islamabad, Sahiwal Campus.</a>
+                          <p class="lead p-2">COMSATS University Islamabad, Sahiwal campus is situated half-way between Lahore and Multan on COMSATS Road off G.T Road Sahiwal, was formally inaugurated on September 23, 2006.
+                            The campus is purpose built and is spread over area of 36 acres on land. CUI Sahiwal is committed to provide state of the art training and education to our students and prepare them for successful career in their respective fields.
+                            Our mission is to encourage learning and promote research activities in order to facilitate our students to fulfill their aims and aspirations objectively.</p>
+                        </div>
+                        <div class="tab-pane" id="adm-3">
+                          <a href="" class="btn btn-link btn-info">From: </a><a href="" class="btn btn-link btn-primary">2017 - 2021</a>
+                          <p class="lead p-2">Took part in Bachelor's of Science in Software Engineering (BSSE)</p>
+                        </div>
+                        <div class="tab-pane" id="acc-3">
+                          <p class="lead p-2">Currently performing well in 8th semester, have learnt alot from basics of programming to expert level, Software Design & development Processes & Methodologies, Life Cycles, Architectures, Requirement Engineering and many more to provide such expertise in my professional life style.</p>
+                          <a href="#" class="btn btn-link btn-info">Current (7th-sem ~ cgpa): <a href="" class="btn btn-link btn-primary">3.1/4.0 ~ 77.5%</a></a><br>
+                          <a href="#" class="btn btn-link btn-info">Status: <a href="" class="btn btn-link btn-primary">Graduation Pending</a></a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--/row-->
+            <!-- timeline item 4 -->
+            <div class="row no-gutters">
+              <div class="col-sm py-2">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="float-right text-muted small">Never quit learning... 😉</div>
+                    <h4 class="card-title">Master/P.H.D in Artificial Intelligence</h4>
+                    <a href="#" class="btn btn-link btn-info">Status: <a href="" class="btn btn-link btn-primary">Pending</a></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                <div class="row h-50">
+                  <div class="col border-right">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+                </div>
+                <h5 class="m-2">
+                  <span class="badge badge-pill bg-exotic border">&nbsp;</span>
+                </h5>
+                <div class="row h-50">
+                  <div class="col">&nbsp;</div>
+                  <div class="col">&nbsp;</div>
+                </div>
+              </div>
+              <div class="col-sm"> <!--spacer--> </div>
+            </div>
+            <!--/row-->
+          </div>
+          <!--END Education Section-->
+
+          <!--Skills Section-->
+          <h3 id="skills" class="title mb-3">Skills</h3>
+          <div class="container py-2 mt-4 mb-4" id="skill-progress-bars">
+            {% for skill in skills %}
+              <div class="row mb-3">
+                <div class="col-sm-8 col-md-8 col-lg-8">
+                  <div class="progress-container progress-primary">
+                  <span class="progress-badge"><button class="btn btn-link btn-success">{{ skill.skill_name }}</button></span>
+                  <div class="progress">
+                    <div class="progress-bar progress-bar-warning" id="skill-progress-{{ skill.id }}" role="progressbar" aria-valuenow="{{ skill.skill_master_percentage }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ skill.skill_master_percentage }}%;">
+                      <span class="progress-value">{{ skill.skill_master_percentage }}%</span>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                  <a href="{{ skill.skill_description_link }}">{{ skill.skill_icon|safe }}</a>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+          <!--END Skills Section-->
+
+          <!--Experience Section-->
+          <h3 id="experience" class="title mb-3">Experience</h3>
+          <div class="container">
+              <div id="accordion">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-2">
+                          <button class="btn btn-link btn-success custom-card-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Work & Volunteerships
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body custom-card-body">
+                          <div class="container rounded">
+                            {% for exp in experiences.works %}
+                            <div class="row highlighted-card-body">
+                              <div class="col-sm-2 mt-2 mb-2">
+                                <img src="/media/orgs/{{ exp.image }}" alt="Image" class="img-raised">
+                              </div>
+                              <div class="col-sm-10">
+                                <div class="row">
+                                  <div class="col-sm-5 pl-0">
+                                    <button class="btn btn-link btn-success">{{ exp.experience_name }}</button>
+                                    <br>
+                                    <button class="btn btn-link btn-success">{{ exp.organization_name }}</button>
+                                  </div>
+                                  <div class="col-sm-7">
+                                    <button class="btn btn-link btn-info">{{ exp.exp_date }}</button>
+                                    <button class="btn btn-link btn-info">{{ exp.org_location }}</button>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <p class="lead">{{ exp.learning_description }}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-2">
+                          <button class="btn btn-link btn-success custom-card-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Experience
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body custom-card-body">
+                          <div class="container rounded">
+                            {% for exp in experiences.experiences %}
+                            <div class="row highlighted-card-body">
+                              <div class="col-sm-2 mt-2 mb-2">
+                                <img src="/media/orgs/{{ exp.image }}" alt="Image" class="img-raised">
+                              </div>
+                              <div class="col-sm-10">
+                                <div class="row">
+                                  <div class="col-sm-6 pl-0">
+                                    <button class="btn btn-link btn-success">{{ exp.experience_name }}</button>
+                                    <br>
+                                    <button class="btn btn-link btn-success">{{ exp.organization_name }}</button>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <button class="btn btn-link btn-info">{{ exp.exp_date }}</button>
+                                    <button class="btn btn-link btn-info">{{ exp.org_location }}</button>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <p class="lead">{{ exp.learning_description }}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-2">
+                        <button class="btn btn-link btn-success custom-card-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Internships
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body custom-card-body">
+                          <div class="container rounded">
+                            {% for exp in experiences.internships %}
+                            <div class="row highlighted-card-body">
+                              <div class="col-sm-2 mt-2 mb-2">
+                                <img src="/media/orgs/{{ exp.image }}" alt="Image" class="img-raised">
+                              </div>
+                              <div class="col-sm-10">
+                                <div class="row">
+                                  <div class="col-sm-6 pl-0">
+                                    <button class="btn btn-link btn-success">{{ exp.experience_name }}</button>
+                                    <br>
+                                    <button class="btn btn-link btn-success">{{ exp.organization_name }}</button>
+                                  </div>
+                                  <div class="col-sm-6">
+                                    <button class="btn btn-link btn-info">{{ exp.exp_date }}</button>
+                                    <button class="btn btn-link btn-info">{{ exp.org_location }}</button>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-12">
+                                    <p class="lead">{{ exp.learning_description }}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          <!--END Experience Section-->
+
+          <!--Open Source Section-->
+          <h3 id="open-source" class="title mb-3">Open Source</h3>
+          <div class="container">
+            <div id="accordion-open-source">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-header" id="headingOne-open-source">
+                      <h5 class="mb-2">
+                        <button class="btn btn-link btn-success custom-card-link" data-toggle="collapse" data-target="#collapseOne-open-source" aria-expanded="true" aria-controls="collapseOne-open-source">
+                          Open Source
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne-open-source" class="collapse" aria-labelledby="headingOne-open-source" data-parent="#accordion-open-source">
+                      <div class="card-body custom-card-body">
+                        <div class="container rounded">
+                          {% for repo in repos %}
+                          <div class="row highlighted-card-body">
+                            <div class="col-sm-12">
+                              <div class="row">
+                                <div class="col-sm-9 pl-0">
+                                  <button class="btn btn-link btn-success">{{ repo.name }}</button>
+                                  <br>
+                                  <a href="{{ repo.html_url }}" class="btn btn-link btn-info">View Code &#8594;</a>
+                                </div>
+                                <div class="col-sm-3">
+                                  <span class="badge badge-primary mb-3">{{ repo.language|default_if_none:".RAR" }}</span><br>
+                                  <h5>Forks: {{ repo.forks_count }} &nbsp; <span><i class="devicon-git-plain custom-dev-icon-small"></i></span> </h5>
+                                  <span class="badge badge-danger">{{ repo.created_at }}</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END Open Source Section-->
+
+          <!--Comment Section-->
+          <h3 id="comments" class="title mb-3">Public Client Comments</h3>
+          <div class="container">
+            <div id="accordion-comments">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-header" id="headingOne-comments">
+                      <h5 class="mb-2">
+                        <button class="btn btn-link btn-success custom-card-link" data-toggle="collapse" data-target="#collapseOne-comments" aria-expanded="true" aria-controls="collapseOne-comments">
+                          Comments
+                          <button class="btn btn-success" data-toggle="modal" data-target="#myModal2">
+                            Write Review
+                          </button>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne-comments" class="collapse show" aria-labelledby="headingOne-comments" data-parent="#accordion-comments">
+                      <div class="card-body custom-card-body">
+                        <div class="container rounded">
+                          {% for comment in public_comments %}
+                          <div class="row highlighted-card-body">
+                            <div class="col-sm-12">
+                              <div class="row">
+                                <div class="col-sm-9 pl-0">
+                                  <button class="btn btn-link btn-success">{{ comment.user_name }}</button>
+                                  <br>
+                                  <a href="mailto:{{ comment.user_email }}" class="btn btn-link btn-info">{{ comment.user_email }}</a>
+                                  <div class="container">
+                                      <p class="lead">{{ comment.experience }}</p>
+                                      {% for rat in "x"|ljust:comment.rating %}
+                                        <span class = "fa fa-star checked"></span>
+                                      {% endfor %}
+                                    </div>
+                                  <div class="row">
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-11">
+                                        {% if comment.reply %}
+                                        <div class="reply m-2 rounded">
+                                          <p class="lead">
+                                            {{ comment.reply }}<br>
+                                            <h6>~ Admin: Faizan Akhtar</h6>
+                                          </p>
+                                        </div>
+                                        {% endif %}
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END Comment Section-->
+
+          <!--Tool & Technologies Section-->
+          <h3 id="tools" class="title mb-3">Tool & Technologies</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <h4 class="tech-brands">Front End Technologies</h4>
+                <div class="tech-brand-icons">
+                  <span>
+                    <i class="devicon-react-original-wordmark colored tech-brand-icons"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored tech-brand-icons"></i>
+                    <i class="devicon-html5-plain-wordmark colored tech-brand-icons"></i>
+                    <i class="devicon-css3-plain-wordmark colored tech-brand-icons"></i>
+                    <i class="devicon-javascript-plain colored tech-brand-icons"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <h4 class="tech-brands">Back End Technologies</h4>
+                <span>
+                  <i class="devicon-django-plain-wordmark colored tech-brand-icons"></i>
+                  <i class="devicon-flask-original-wordmark colored tech-brand-icons"></i>
+                  <i class="devicon-dotnetcore-plain colored tech-brand-icons"></i>
+                  <i class="devicon-php-plain colored tech-brand-icons"></i>
+                </span>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <h4 class="tech-brands">Tools</h4>
+                <span>
+                  <i class="devicon-jupyter-plain-wordmark colored tech-brand-icons"></i>
+                  <i class="devicon-pycharm-plain colored tech-brand-icons"></i>
+                  <i class="devicon-git-plain-wordmark colored tech-brand-icons"></i>
+                </span>
+                <br>
+                <span>
+                  <i style="font-size: 90px !important;" class="devicon-slack-plain-wordmark tech-brand-icons"></i>
+                  <i style="font-size: 90px !important;" class="devicon-visualstudio-plain-wordmark tech-brand-icons"></i>
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <h5>According to the studies of Human Computer Interaction.
+                  A modern UI is a basic need of modern applications thus i use modern & upto-date technologies
+                  like ~ React, BootStrap and custom Html, css and JS to provide interactivity more usability features with an aesthetic and premium look to the applications.</h5>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <h5>I have been developing simple business solutions to modern Intelligent ERP Backends & API's that require complex business logics, analytical reports
+                  and task driven intelligence to automate procedures using these backend technologies.</h5>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <h5>Tools that help in development process and support many features such as languages support along with intellisense and many other useful features, to help create a productive environment for the developer.</h5>
+              </div>
+            </div>
+          </div>
+          <!--END Tool & Technologies Section-->
+
+      </div>
+
+      <!--GALLERY SECTION-->
+      <div id="projects" class="m-5">
+        <h3 class="title mb-3">Projects</h3>
+        {% for gallery_items in content %}
+            <div class="row">
+              {% for item in gallery_items %}
+                <div class="col-sm py-2">
+                <div class="card shadow">
+                  <div class="card-header">
+                        <ul class="nav nav-tabs nav-tabs-primary" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#proj-img-{{item.id}}" role="tablist">
+                              <i class="icon tim-icons icon-trophy"></i>
+                              Project
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#proj-des-{{item.id}}" role="tablist">
+                              <i class="icon tim-icons icon-paper"></i>
+                              Description
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                  <div class="card-body">
+                    <!-- Tab panes -->
+                    <div class="tab-content tab-space">
+                      <div class="tab-pane active" id="proj-img-{{item.id}}">
+                        <div class="row">
+                          <div class="col-sm-12">
+
+                            <h4>Name:<button class="btn btn-link btn-success custom-card-link">{{ item.project_name }}</button></h4>
+                            Languages & Frameworks:
+                            <h1>
+                              &nbsp;
+                              {% for lang in item.languages %}
+                                <span class="badge badge-success">{{ lang }}</span>
+                              {% endfor %}
+                            </h1>
+                            <br>
+                            <a href="{{ item.link }}" class="btn btn-simple btn-primary btn-round mt-3">View Source</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="proj-des-{{item.id}}">
+                        <p> {{ item.project_description }} <br> <a class="btn btn-simple btn-info btn-round mt-3" href="{{ item.link }}">Get Source</a> </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              {% endfor %}
+            </div>
+        {% endfor %}
+      </div>
+      <!--END GALLERY SECTION-->
+
+      <!--Chat Box-->
+      <div class="fabs">
+        <div class="chat">
+            <div class="chat_header">
+                <div class="chat_option">
+                    <div class="header_img">
+                        <img src="{% static 'img/james.jpg' %}"/>
+                    </div>
+                    <span id="chat_head" class="custom-logo-small">XeroX</span> <br> <span class="agent">Bot</span> <span class="online">(Online)</span>
+                </div>
+            </div>
+
+            <div id="chat_converse" class="chat_conversion chat_converse">
+
+            </div>
+
+            <div class="fab_field">
+                <a class="btn btn-primary m-1 p-0" data-toggle="modal" data-target="#chat-box-model" id="fab_camera"><i style="font-size: 15px;" class="fab fas fa-cog p-2 mt-2" aria-hidden="true"></i></a>
+                <a onclick="handle_chat()" class="btn btn-primary m-0 p-0" id="fab_send"><i style="font-size: 15px;" class="fab fa fa-paper-plane p-2 mt-3" aria-hidden="true"></i></a>
+                <textarea style="height: 55px; margin: 0px;" id="chatSend" name="chat_message" placeholder="Send a message" class="chat_field chat_message"></textarea>
+            </div>
+        </div>
+            <a id="prime" class="fab-box"><i class="prime zmdi zmdi-comment-outline"></i></a>
+      </div>
+      <!--END Chat Box-->
+
+      <!-- Form Comment Modal -->
+      <div class="modal fade modal-black" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="tim-icons icon-simple-remove text-white"></i>
+              </button>
+              <div class="text-muted text-center ml-auto mr-auto">
+                <h3 class="mb-0">Comment</h3>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="text-center text-muted mb-4 mt-3">
+                <small>Enter details here</small>
+              </div>
+              <form role="form">
+                <div class="form-group">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-user"></i></span>
+                      </div>
+                    <input id="comment-user-name" type="text" class="form-control" placeholder="Enter Full-Name">
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="tim-icons icon-email-85"></i>
+                      </span>
+                    </div>
+                    <input id="comment-email" class="form-control" placeholder="Enter Email" type="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-alternative">
+                    <div class="container">
+                      <input type="hidden" id="rating-value" style="font-size: 100px;">
+                      <span class="fa fa-star" id="star-1" onmouseover="change_rating(this)" onclick="change_rating(this)"></span>
+                      <span class="fa fa-star" id="star-2" onmouseover="change_rating(this)" onclick="change_rating(this)"></span>
+                      <span class="fa fa-star" id="star-3" onmouseover="change_rating(this)" onclick="change_rating(this)"></span>
+                      <span class="fa fa-star" id="star-4" onmouseover="change_rating(this)" onclick="change_rating(this)"></span>
+                      <span class="fa fa-star" id="star-5" onmouseover="change_rating(this)" onclick="change_rating(this)"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-group">
+                    <div class="input-group input-group-alternative">
+                      <textarea class="form-control" id="comment-description-text" rows="3" placeholder="Write your comment"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="button" class="btn btn-primary my-4" onclick="post_comment()">Post</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  End Modal -->
+
+      <!-- Form Chat Modal -->
+      <div class="modal fade modal-black" id="chat-box-model" tabindex="-1" role="dialog" aria-labelledby="myModal-Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header justify-content-center">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                <i class="tim-icons icon-simple-remove text-white"></i>
+              </button>
+              <div class="text-muted text-center ml-auto mr-auto">
+                <h3 class="mb-0">Bot Chat Examples</h3>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="text-center text-muted mb-4 mt-3">
+                <small>User must provide similar contextual questions like these</small>
+              </div>
+              <div style="height: 400px; overflow: scroll;" id="accordion-bot-chat">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="card">
+                    <div class="card-header" id="headingOne-bot-chat">
+                      <h5 class="mb-2">
+                        <button class="btn btn-link btn-success custom-card-link" data-toggle="collapse" data-target="#collapseOne-chat-bot" aria-expanded="true" aria-controls="collapseOne-chat-bot">
+                          Click to expand Chat Examples
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne-chat-bot" class="collapse" aria-labelledby="headingOne-bot-chat" data-parent="#accordion-bot-chat">
+                      <div class="card-body custom-card-body">
+                        <div class="container rounded">
+                          {% for chat in chats %}
+                          <div class="row highlighted-card-body">
+                            <div class="col-sm-12">
+                              <div class="row">
+                                <div class="container">
+                                  {{ chat }}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  End Modal -->
+
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h1><span class="custom-logo">XeroX</span> • <code><span class="custom-h1">AI</span></code></h1>
+          </div>
+          <div class="col-md-3">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#user-intro" class="nav-link">
+                  Introduction
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#education" class="nav-link">
+                  Education
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link">
+                  Skills
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#experience" class="nav-link">
+                  Experience
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="#open-source" class="nav-link">
+                  Open Source
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#comments" class="nav-link">
+                  Comments
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#tools" class="nav-link">
+                  Tools & Technologies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">
+                  Projects
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h3 class="title">Contacts:</h3>
+            <div class="btn-wrapper profile">
+              <a target="_blank" href="https://twitter.com/FaizanA29699430" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Contact on Twitter">
+                <i style="font-size: 15px;" class="fab devicon-twitter-original colored"></i>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/nev.ermind9619934" class="btn btn-icon btn-neutral btn-round btn-simple" data-toggle="tooltip" data-original-title="Contact on Facebook">
+                <i style="font-size: 15px;" class="fab devicon-facebook-plain colored"></i>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/faizan-akhtar-000xd" class="btn btn-icon btn-neutral  btn-round btn-simple" data-toggle="tooltip" data-original-title="Contact on LinkedIn">
+                <i style="font-size: 15px;" class="fab devicon-linkedin-plain colored"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+
+
+  <!--   Core JS Files   -->
+  <script src="{% static 'js/core/jquery.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/core/popper.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/core/bootstrap.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'js/plugins/perfect-scrollbar.jquery.min.js' %}"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="{% static 'js/plugins/bootstrap-switch.js' %}"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="{% static 'js/plugins/nouislider.min.js' %}" type="text/javascript"></script>
+  <!-- Chart JS -->
+  <script src="{% static 'js/plugins/chartjs.min.js' %}"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="{% static 'js/plugins/moment.min.js' %}"></script>
+  <script src="{% static 'js/plugins/bootstrap-datetimepicker.js' %}" type="text/javascript"></script>
+  <!-- Black Dashboard DEMO methods, don't include it in your project! -->
+  <script src="{% static 'demo/demo.js' %}"></script>
+  <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
+  <script src="{% static 'js/blk-design-system.min.js' %}" type="text/javascript"></script>
+
+  <script src="{% static 'js/particles.js' %}"></script>
+  <script src="{% static 'js/base_effect.js' %}"></script>
+  <script src="{% static 'js/comment-handler.js' %}"></script>
+
+  <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+
+    window.onscroll = function () {
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      blackKit.initDatePicker();
+      blackKit.initSliders();
+    });
+
+    function scrollToDownload() {
+
+      if ($('.section-download').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+  </script>
+  <script>
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: " + (e.pageY - 30) + "px; left: " + (e.pageX - 30) + "px;")
+    })
+    document.addEventListener('click', () => {
+      cursor.classList.add("expand");
+
+      setTimeout(() => {
+        cursor.classList.remove("expand")
+      }, 500)
+
+    })
+  </script>
+  <script src="{% static 'js/jquery/custom-animations.js' %}"></script>
+  <script src="{% static 'js/chatbox.js' %}"></script>
+</body>
+
+</html>

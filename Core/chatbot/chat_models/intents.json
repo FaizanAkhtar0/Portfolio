@@ -1,0 +1,118 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day", "hi"],
+         "responses": ["Hello there, how may i help you?", "Hi, How can i help you?", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I am a Chatbot Assistant, i can help you with exploring this portfolio", "Can help you explore master's portfolio in sections: (Profession, Skills, Education, Projects, Experience, About etc.)"],
+         "context": [""]
+        },
+        {"tag": "profession",
+         "patterns": ["What is your master's profession?", "What is his profession?", "What is your profession?", "explain his profession", "explain master's profession", "explain profession" ],
+         "responses": ["My Master is a Software Engineer.", "My Master is a creator and a Software Engineer.<br> He loves to create.", "He's a Software Engineer."],
+         "context": [""]
+        },
+        {"tag": "from",
+         "patterns": ["Where is he from?", "Where does he live?", "where he lives?", "what is his home city?", "can you tell me where he lives?" ],
+         "responses": ["He from a small city of Pakistan named as <b>Jhang Sadar</b>, was raised up in a well nurturing and productive enviourment where he came to love the art of creation."],
+         "context": [""]
+        },
+        {"tag": "skills",
+         "patterns": ["What is his skills?", "Explore skills", "Describe his skills?", "What skills he has learned?", "Enlist Skills" ],
+         "responses": ["Over the few years of his eductaional and self learning practices my master has worked hard to develop such skills as he continuous to explore and impore them:<br><ul><li>Desktop App Development</li><li>Full-Stack Web Development</li><li>Algorithm & Data Structure</li><li>Data Bases and Schemas</li><li>Design Patterns</li><li>Software Architectures</li><li>Modern Interface Design</li><li>Artifical Appication Development</li><li>Data Science (Analytics and ML Engineering)</li></ul>"],
+         "context": [""]
+        },
+        {"tag": "education",
+         "patterns": ["Tell me about his education", "What is his education?", "Master's education", "Explore Education", "What is his qualifications?"],
+         "responses": ["My Master has graduated from school, college and has done his Bachelor's of Science in Software Engineering from a very reputable university named <b>Comsats University Islamabad, Sahiwal Campus.<b/>"],
+         "context": [""]
+        },
+        {"tag": "about_me",
+         "patterns": ["Tell me about your master", "speak about your master", "Can you tell me something about your master", "Tell me more about your master", "Something about your master", "About master", "About your master"],
+         "responses": ["Competent, enthusiastic and responsible IT professional, with excellent academic and professional background. Seeking a position that will allow me to utilize my skills and abilities in the IT Industry that offers a professional growth while being resourceful, innovative and creative."],
+         "context": [""]
+        },
+        {"tag": "future_goals",
+         "patterns": ["about future goals", "Master's future goals", "Master's goals", "Can you tell me about your master's future goals?", "Tell me about his future goals"],
+         "responses": ["My master has set his foots on a pro long journey of life. He wants to be the world best creator an Aritifical Intelligence researcher to help create a better world. He intends to create or atleast lay a basic foundation for the Open World Challange of Artifical General Intelligence."],
+         "context": [""]
+        },
+        {"tag": "back_end",
+         "patterns": ["What backend technologies he uses?", "what technologies he uses for backend?", "Can you tell me the backend technologies that your master uses?", "Enlist backend technologies", "explore backend technologies" ],
+         "responses": ["Following are the technologies my master uses for backend<br><ul><li>.Net Core(C#)</li><li>Python(Djnago, Flask)</li><li>Php</li></ul>"],
+         "context": [""]
+        },
+        {"tag": "front_end",
+         "patterns": ["What frontend technologies he uses?", "what technologies he uses for frontend?", "Can you tell me the frontend technologies that your master uses?", "Enlist frontend technologies", "explore frontend technologies" ],
+         "responses": ["Following are the technologies my master uses for frontend<br><ul><li>ReactJs</li><li>BootStrap</li><li>Html, Css, Js</li></ul>"],
+         "context": [""]
+        },
+        {"tag": "projects",
+         "patterns": ["What projects your master has done?", "Enlist the projects?", "Explore projects", "Master's projects"],
+         "responses": ["Master has done many projects both for self learning and practices and for market interests. You can view a few show case projects in the projects section of portfolio."],
+         "context": [""]
+        },
+        {"tag": "favourit_projects",
+         "patterns": ["What are his favourit projects?", "Master's favourit projects", "favourit projects"],
+         "responses": ["Master's has many favourit projects like HRMS, Intelligent Applications like recommender systems and summarization analyzers. Apart from the usual one master tells me i'm also the one of his most favourit creations. :)"],
+         "context": [""]
+        },
+        {"tag": "hobbies",
+         "patterns": ["What's his hobbies?", "What does he like to do in his free time?", "What are your maste's hobbies?", "master hobbies", "hobbies"],
+         "responses": ["Master loves to experiment, learn and play games. He mostly divides his free time into learning and gaming part. He loves to learn Cutting Edge Research on AI and new development technologies."],
+         "context": [""]
+        },
+        {"tag": "who_are_you",
+         "patterns": ["Who are you?", "What are you?", "Are you a human?"],
+         "responses": ["Hi, my name is <b>XeroX</b>. I am a AI bot designed to let the visitors explore and provide with extra information about this portfolio. Feel free to ask relevant questions with in the context of this protfolio!"],
+         "context": [""]
+        },
+        {"tag": "languages",
+         "patterns": ["Master's languages?", "Programming languages", "what languages he knows?"],
+         "responses": ["C#, Python, Java, C++ and Php"],
+         "context": [""]
+        },
+        {"tag": "experience",
+         "patterns": ["What's his experience?", "Master's experience", "Can you tell me about his experience?", "How much experience he has?", "Explore experience", "What is your master's experience"],
+         "responses": ["He has been developing ERP systems for local customers for 2+ years, has created many ERP systems that not only included buisness logics, transactional systems, reporting systems, modern ui dashboard with analytics but also the integration of AI to automate complex procedures to create intelligent ERP systems."],
+         "context": [""]
+        },
+        {"tag": "contact_info",
+         "patterns": ["Provide contact information", "contact info", "contact information", "master's contact"],
+         "responses": ["You may contact him at:<br><ul><li><a href=\" https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=faizan.akhtar0160@gmail.com \" target=\"_blank\">Gmail</a></li><li><a href=\" https://wa.me/+923126509649 \" target=\"_blank\">Whats App</a></li></ul>"],
+         "context": [""]
+        },
+        {"tag": "experience_ai",
+         "patterns": ["What is his experience in AI?", "experience in AI?", "Master's experience in AI?", "AI experience"],
+         "responses": ["He has done much work in <b>NLP, Deep Learning, Visual AI(Open cv)</b> for 1.5+ year. He has created many intelligent applications to solve complex problems."],
+         "context": [""]
+        },
+        {"tag": "fyp",
+         "patterns": ["What was his fyp project?", "what was master's fyp?", "Explain fyp project", "Can you tell me about his fyp project?"],
+         "responses": ["Master's FYP was <b>Sign to Speech</b> a progressive web application that not only included full-stack development but also the AI integration, ML Engineering and Data Science to study, analyze pre-process the pictorial data and to make predictions on it.<br>The general idea is that the web application can be run on any platform and it can access the camera device there. It will capture the camera feed and provide it to ML model for prediction. The output of this model is then used for speech synthesis by the system and is also recorded as history by the app."],
+         "context": [""]
+        },
+        {"tag": "quotes",
+         "patterns": ["Master's quotes", "Can you tell me a quote?", "his quotes", "creator's quote", "Master's favourit quotes", "favourit quotes"],
+         "responses": ["To create something new first comes destruction, then construction.", "I am not more than what you'd 've thought but, I'm always more than what you'd 've ever imagined.", "To defeat evil only i shall become an even greater evil."],
+         "context": [""]
+        }
+   ]
+}
