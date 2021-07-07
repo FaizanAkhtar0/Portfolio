@@ -1,1 +1,4 @@
 /venv/
+/Core/migrations/
+/Core/static/
+/media/
