@@ -17,8 +17,7 @@ from django.contrib import admin
 from django.conf.urls.static import static
 from django.urls import path
 
-from portfolio.settings import MEDIA_ROOT, MEDIA_URL, STATIC_URL, STATIC_ROOT
-
+from portfolio.settings import MEDIA_ROOT, MEDIA_URL
 from Core.views import index, add_comment, message_bot, download
 
 urlpatterns = [
@@ -27,4 +26,4 @@ urlpatterns = [
     path('add_comment/', add_comment),
     path('message/', message_bot),
     path('download/', download, name='resume')
-] + static(MEDIA_URL, document_root=MEDIA_ROOT) + static(STATIC_URL, document_root=STATIC_ROOT)
+] + static(MEDIA_URL, document_root=MEDIA_ROOT)
